@@ -1,26 +1,134 @@
-<h1>Barrioized Haiku</h1>
-
-
-<p>Yu Li <br /> 2945 Pembina Hwy<br /> R3T3R1<br /> Canada</p>
-
-<hr />
-
-<p>
-    When it rains the water 
-    <br />raises the dead 
-    <br />street long enough 
-    <br />to let the wheels
-    <br />find the divots of neglect.
-    <br />That is why I walked
-    <br />barefoot to your lintel:
-    <br />everything built skews
-    <br />away from us and toward
-    <br />the gray light of wealth.
-    <br />Whether it is cold
-    <br />or the stucco hot,
-    <br />I will remind you to be afraid.
-    <br />I am trying to tell you
-    <br />neither the road nor the river
-    <br />can carry the house.
-
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Like Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: #ff0000;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .container {
+            display: flex;
+            margin-top: 60px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background-color: #ddd;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .video {
+            display: inline-block;
+            width: calc(25% - 20px);
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video img {
+            width: 100%;
+            height: auto;
+        }
+        .video .info {
+            padding: 10px;
+        }
+        .video .info h3 {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .video .info p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YouTube Clone</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Trending</li>
+                <li>Subscriptions</li>
+                <li>Library</li>
+                <li>History</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <div class="info">
+                    <h3>Video Title</h3>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <div class="info">
+                    <h3>Video Title</h3>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <div class="info">
+                    <h3>Video Title</h3>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <div class="info">
+                    <h3>Video Title</h3>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
